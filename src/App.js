@@ -19,7 +19,7 @@ function App() {
 
   useEffect(async () => {
     try {
-      const rawData = await fetch('/data/AMD_2015_tweets.json');
+      const rawData = await fetch('/data/input.json');
       const rawJson = await rawData.json();
 
       const allTests = rawJson.results[0].allTests;
